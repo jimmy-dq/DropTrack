@@ -1,0 +1,2 @@
+cd /apdcephfs/private_qiangqwu/Projects/OSTrack_ours_v3
+/apdcephfs/private_qiangqwu/anaconda3/envs/ostrack/bin/python tracking/train.py --script ostrack --config vitb_384_mae_ce_32x4_ep300 --save_dir /apdcephfs/share_1290939/qiangqwu/OSTrack_ours_v3 --mode multiple --nproc_per_node 4 --use_lmdb 1 --use_wandb 0

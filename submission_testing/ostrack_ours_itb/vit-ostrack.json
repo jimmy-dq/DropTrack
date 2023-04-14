@@ -1,0 +1,13 @@
+{
+    "Token":"aPDHhnYCjGr0Vs4zRn-jvQ",
+    "business_flag": "TEG_AILab_CVC_chongqing",
+    "task_flag": "exp-vit-ostrack-ours-testing-itb-v3",
+    "start_cmd": "sh ./start_test_offline.sh",
+    "GPUName": "V100",
+    "is_elasticity": false,
+    "keep_alive": true,
+    "model_local_file_path": "/apdcephfs/private_qiangqwu/Projects/OSTrack_ours_v3/submission_testing/ostrack_ours_itb",
+    "host_num": 1,
+    "host_gpu_num": 4,
+    "image_full_name": "mirrors.tencent.com/star_library/g-tlinux2.2-python3.6-cuda11.0-cudnn8.1:latest"
+}
