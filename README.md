@@ -1,6 +1,10 @@
 # DropTrack
 The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper [_DropMAE: Masked Autoencoders with Spatial-Attention Dropout for Tracking Tasks_](https://arxiv.org/pdf/2304.00571.pdf).
 
+<p align="left">
+  <img src="https://github.com/jimmy-dq/DropTrack/blob/main/qualitative_vis/qualitative_vot_v2.png" width="960">
+</p>
+
 
 ## :sunny: Highlights
 
