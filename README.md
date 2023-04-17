@@ -1,8 +1,6 @@
 # DropTrack
 The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper [_DropMAE: Masked Autoencoders with Spatial-Attention Dropout for Tracking Tasks_](https://arxiv.org/pdf/2304.00571.pdf).
 
-[[Models](https://drive.google.com/drive/folders/1ttafo0O5S9DXK2PX0YqPvPrQ-HWJjhSy?usp=sharing)][[Raw Results](https://drive.google.com/drive/folders/1TYU5flzZA1ap2SLdzlGRQDbObwMxCiaR?usp=sharing)][[Training logs](https://drive.google.com/drive/folders/1LUsGf9JRV0k-R3TA7UFBRlcic22M4uBp?usp=sharing)]
-
 
 ## :sunny: Highlights
 
@@ -94,7 +92,7 @@ Download the tracking model weights
 <!-- TABLE BODY -->
 <tr><td align="left">Tracking Models</td>
 <td align="center"><a href="">download</a></td>
-<td align="center"><a href="">download</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1OMYfyvkpxf7DVS7wYLUGmXPydS9TkskT/view?usp=sharing">download</a></td>
 <td align="center"><a href="">download</a></td>
 </tbody></table>
 
