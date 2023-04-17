@@ -8,7 +8,7 @@ The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper
 
 #### * Thanks for the great [_OSTrack_](https://github.com/botaoye/OSTrack) library, which helps us to quickly implement the [_DropMAE_](https://github.com/jimmy-dq/DropMAE) VOT fine-tuning. The repository mainly follows the OSTrack repository.
 
-#### * The OSTrack w/ our [_DropMAE_](https://github.com/jimmy-dq/DropMAE) pre-trained models can achieve state-of-the-art perforamnce on existing popular tracking benchmarks.
+#### * The OSTrack w/ our [_DropMAE_](https://github.com/jimmy-dq/DropMAE) pre-trained models can achieve state-of-the-art performance on existing popular tracking benchmarks.
 
 | Tracker     | GOT-10K (AO) | LaSOT (AUC) | LaSOT (AUC) | TrackingNet (AUC) | TNL2K(AUC) |
 |:-----------:|:------------:|:-----------:|:-----------:|:-----------------:|:-----------:|
@@ -19,22 +19,12 @@ The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper
 Our DropTrack has the same training procedure and nearly the same model parameters (i.e., except for using two frame identity embeddings) w/ OSTrack, so the training speed is consistent w/ OSTrack. We use 4 A100 GPUs w/ a total batch size of 128, which costs about ~6 hours (100 Epochs) for training on GOT-10k.
 
 ## Install the environment
-**Option1**: Use the Anaconda (CUDA 10.2)
+**Option1**: We sse the Anaconda to create the Python environment, which mainly follows the installation description in OSTrack. We also list the specific installation dependency in requirements.txt, which can be installed as following
 ```
-conda create -n ostrack python=3.8
-conda activate ostrack
-bash install.sh
+conda create -n droptrack python=3.8
+conda activate droptrack
+pip install -r requirements.txt
 ```
-
-**Option2**: Use the Anaconda (CUDA 11.3)
-```
-conda env create -f ostrack_cuda113_env.yaml
-```
-
-**Option3**: Use the docker file
-
-We provide the full docker file here.
-
 
 ## Set project paths
 Run the following command to set paths for this project
@@ -46,6 +36,7 @@ After running this command, you can also modify paths by editing these two files
 lib/train/admin/local.py  # paths about training
 lib/test/evaluation/local.py  # paths about testing
 ```
+
 
 ## Data Preparation
 Put the tracking datasets in ./data. It should look like:
