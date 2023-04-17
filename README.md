@@ -91,9 +91,9 @@ Download the tracking model weights
 <th valign="bottom">K700-800E-AllData</th>
 <!-- TABLE BODY -->
 <tr><td align="left">Tracking Models</td>
-<td align="center"><a href="">download</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1AHNr7dJ1B53CR8WigV26amEoFJLTtu7v/view?usp=sharing">download</a></td>
 <td align="center"><a href="https://drive.google.com/file/d/1OMYfyvkpxf7DVS7wYLUGmXPydS9TkskT/view?usp=sharing">download</a></td>
-<td align="center"><a href="">download</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1l0YSK0QLPGVIGiNXwlaWp5uhIkJawJqh/view?usp=sharing">download</a></td>
 </tbody></table>
 
 Change the corresponding values of `lib/test/evaluation/local.py` to the actual benchmark saving paths, i.e., ```save_dir``` tag should be set to the downloaded tracking model path and you can also modify the tracking model name in ```lib/test/parameter/ostrack.py```.
