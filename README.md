@@ -96,7 +96,7 @@ Download the tracking model weights
 <td align="center"><a href="https://drive.google.com/file/d/1l0YSK0QLPGVIGiNXwlaWp5uhIkJawJqh/view?usp=sharing">download</a></td>
 </tbody></table>
 
-Change the corresponding values of `lib/test/evaluation/local.py` to the actual benchmark saving paths, i.e., ```save_dir``` tag should be set to the downloaded tracking model path and you can also modify the tracking model name in ```lib/test/parameter/ostrack.py```.
+Change the corresponding values of `lib/test/evaluation/local.py` to the actual benchmark saving paths. Note that the ```save_dir``` tag should be set to the downloaded tracking model path and you can also modify the tracking model name in ```lib/test/parameter/ostrack.py```.
 
 Some testing examples:
 - LaSOT or other off-line evaluated benchmarks (modify `--dataset` correspondingly)
