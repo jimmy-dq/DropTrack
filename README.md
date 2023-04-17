@@ -112,7 +112,7 @@ python lib/test/utils/transform_got10k.py --tracker_name ostrack --cfg_name vitb
 
 
 ## Acknowledgments
-* Thanks for the [OSTrack](https://github.com/researchmm/Stark](https://github.com/botaoye/OSTrack) library.
+* Thanks for the [OSTrack](https://github.com/botaoye/OSTrack) library for convenient implementation.
 
 
 ## Citation
