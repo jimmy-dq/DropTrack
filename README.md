@@ -65,7 +65,7 @@ Put the tracking datasets in ./data. It should look like:
 
 
 ## Training
-* Download pre-trained in [_DropMAE_](https://github.com/jimmy-dq/DropMAE) and put it under `$PROJECT_ROOT$/pretrained_models`. 
+* Download pre-trained DropMAE models in [_DropMAE_](https://github.com/jimmy-dq/DropMAE) and put it under `$PROJECT_ROOT$/pretrained_models`. 
 * Modify the ```PRETRAIN_FILE``` tag in ```vitb_384_mae_ce_32x4_ep300.yaml``` or ```vitb_384_mae_ce_32x4_got10k_ep100.yaml``` to the name of your downloaded DropMAE pre-trained models. 
 * Training Command on GOT-10K:
 ```
