@@ -1,47 +1,22 @@
 # OSTrack
-The official implementation for the **ECCV 2022** paper [_Joint Feature Learning and Relation Modeling for Tracking: A One-Stream Framework_](https://arxiv.org/abs/2203.11991).
+The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper [_DropMAE: Masked Autoencoders with Spatial-Attention Dropout for Tracking Tasks_](https://arxiv.org/pdf/2304.00571.pdf).
 
 [[Models](https://drive.google.com/drive/folders/1ttafo0O5S9DXK2PX0YqPvPrQ-HWJjhSy?usp=sharing)][[Raw Results](https://drive.google.com/drive/folders/1TYU5flzZA1ap2SLdzlGRQDbObwMxCiaR?usp=sharing)][[Training logs](https://drive.google.com/drive/folders/1LUsGf9JRV0k-R3TA7UFBRlcic22M4uBp?usp=sharing)]
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/joint-feature-learning-and-relation-modeling/visual-object-tracking-on-lasot)](https://paperswithcode.com/sota/visual-object-tracking-on-got-10k?p=joint-feature-learning-and-relation-modeling)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/joint-feature-learning-and-relation-modeling/visual-object-tracking-on-got-10k)](https://paperswithcode.com/sota/visual-object-tracking-on-got-10k?p=joint-feature-learning-and-relation-modeling)
-
-[//]: # ([![PWC]&#40;https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/joint-feature-learning-and-relation-modeling/visual-object-tracking-on-trackingnet&#41;]&#40;https://paperswithcode.com/sota/visual-object-tracking-on-trackingnet?p=joint-feature-learning-and-relation-modeling&#41;)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/joint-feature-learning-and-relation-modeling/visual-object-tracking-on-uav123)](https://paperswithcode.com/sota/visual-object-tracking-on-uav123?p=joint-feature-learning-and-relation-modeling)
-
-<p align="center">
-  <img width="85%" src="https://github.com/botaoye/OSTrack/blob/main/assets/arch.png" alt="Framework"/>
-</p>
 
 
 ## :sunny: Highlights
 
-### :star2: New One-stream Tracking Framework
-OSTrack is a simple, neat, high-performance **one-stream tracking framework** for joint feature learning and relational modeling based on self-attention operators.
-Without any additional temporal information, OSTrack achieves SOTA performance on multiple benchmarks. OSTrack can serve as a strong baseline for further research.
+#### * Thanks for the great OSTrack library, which helps us to quickly implement the DropMAE VOT fine-tuning.
 
-| Tracker     | GOT-10K (AO) | LaSOT (AUC) | TrackingNet (AUC) | UAV123(AUC) |
-|:-----------:|:------------:|:-----------:|:-----------------:|:-----------:|
-| OSTrack-384 | 73.7         | 71.1        | 83.9              | 70.7        |
-| OSTrack-256 | 71.0         | 69.1        | 83.1              | 68.3        |
+#### * The OSTrack w/ our DropMAE (https://github.com/jimmy-dq/DropMAE) pre-trained models can achieve state-of-the-art perforamnce on existing popular tracking benchmarks.
+
+| Tracker     | GOT-10K (AO) | LaSOT (AUC) | LaSOT (AUC) | TrackingNet (AUC) | TNL2K(AUC) |
+|:-----------:|:------------:|:-----------:|:-----------:|:-----------------:|:-----------:|
+| DropTrack-K700-ViTBase | 75.9         | 71.8        | 52.7        | 84.1              | 56.9        |
 
 
-### :star2: Fast Training
-OSTrack-256 can be trained in ~24 hours with 4*V100 (16GB of memory per GPU), which is much faster than recent SOTA transformer-based trackers. The fast training speed comes from:
-
-1. While previous Siamese-stype trackers required separate feeding of the template and search region into the backbone at each iteration of training, OSTrack directly combines the template and search region. The tight and highly parallelized structure results in improved training and inference speed.
-  
-2. The proposed early candidate elimination (ECE) module significantly reduce memory and time consumption.
-  
-3. Pretrained Transformer weights enables faster convergence.
-
-### :star2: Good performance-speed trade-off
-
-[//]: # (![speed_vs_performance]&#40;https://github.com/botaoye/OSTrack/blob/main/assets/speed_vs_performance.png&#41;)
-<p align="center">
-  <img width="70%" src="https://github.com/botaoye/OSTrack/blob/main/assets/speed_vs_performance.png" alt="speed_vs_performance"/>
-</p>
+### :star2: Training Speed
+Our DropTrack has the same training procedure and nearly the same model parameters w/ OSTrack, so the training speed is consistent w/ OSTrack.
 
 ## Install the environment
 **Option1**: Use the Anaconda (CUDA 10.2)
