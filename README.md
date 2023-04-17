@@ -65,7 +65,7 @@ Put the tracking datasets in ./data. It should look like:
 
 
 ## Training
-* Download pre-trained in [_DropMAE_](https://github.com/jimmy-dq/DropMAE) and put it under `$PROJECT_ROOT$/pretrained_models`. 
+* Download pre-trained DropMAE models in [_DropMAE_](https://github.com/jimmy-dq/DropMAE) and put it under `$PROJECT_ROOT$/pretrained_models`. 
 * Modify the ```PRETRAIN_FILE``` tag in ```vitb_384_mae_ce_32x4_ep300.yaml``` or ```vitb_384_mae_ce_32x4_got10k_ep100.yaml``` to the name of your downloaded DropMAE pre-trained models. 
 * Training Command on GOT-10K:
 ```
@@ -96,7 +96,7 @@ Download the tracking model weights
 <td align="center"><a href="https://drive.google.com/file/d/1l0YSK0QLPGVIGiNXwlaWp5uhIkJawJqh/view?usp=sharing">download</a></td>
 </tbody></table>
 
-Change the corresponding values of `lib/test/evaluation/local.py` to the actual benchmark saving paths, i.e., ```save_dir``` tag should be set to the downloaded tracking model path and you can also modify the tracking model name in ```lib/test/parameter/ostrack.py```.
+Change the corresponding values of `lib/test/evaluation/local.py` to the actual benchmark saving paths. Note that the ```save_dir``` tag should be set to the downloaded tracking model path and you can also modify the tracking model name in ```lib/test/parameter/ostrack.py```.
 
 Some testing examples:
 - LaSOT or other off-line evaluated benchmarks (modify `--dataset` correspondingly)
