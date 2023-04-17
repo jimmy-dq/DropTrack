@@ -6,9 +6,9 @@ The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper
 
 ## :sunny: Highlights
 
-#### * Thanks for the great OSTrack library, which helps us to quickly implement the DropMAE VOT fine-tuning.
+#### * Thanks for the great [_OSTrack_](https://github.com/botaoye/OSTrack) library, which helps us to quickly implement the [_DropMAE_](https://github.com/jimmy-dq/DropMAE) VOT fine-tuning. The repository mainly follows the OSTrack repository.
 
-#### * The OSTrack w/ our DropMAE (https://github.com/jimmy-dq/DropMAE) pre-trained models can achieve state-of-the-art perforamnce on existing popular tracking benchmarks.
+#### * The OSTrack w/ our [_DropMAE_](https://github.com/jimmy-dq/DropMAE) pre-trained models can achieve state-of-the-art perforamnce on existing popular tracking benchmarks.
 
 | Tracker     | GOT-10K (AO) | LaSOT (AUC) | LaSOT (AUC) | TrackingNet (AUC) | TNL2K(AUC) |
 |:-----------:|:------------:|:-----------:|:-----------:|:-----------------:|:-----------:|
@@ -16,7 +16,7 @@ The official fine-tuning implementation of DropTrack for the **CVPR 2023** paper
 
 
 ### :star2: Training Speed
-Our DropTrack has the same training procedure and nearly the same model parameters w/ OSTrack, so the training speed is consistent w/ OSTrack.
+Our DropTrack has the same training procedure and nearly the same model parameters (i.e., except for using two frame identity embeddings) w/ OSTrack, so the training speed is consistent w/ OSTrack. We use 4 A100 GPUs w/ a total batch size of 128, which costs about ~6 hours (100 Epochs) for training on GOT-10k.
 
 ## Install the environment
 **Option1**: Use the Anaconda (CUDA 10.2)
