@@ -82,6 +82,8 @@ cd path_to_your_project
 python tracking/train.py --script ostrack --config vitb_384_mae_ce_32x4_ep300 --save_dir save_path --mode multiple --nproc_per_node 4 --use_lmdb 0 --use_wandb 0
 ```
 
+## Training logs
+The training log of DropTrack-Got10k-100E is available [here](https://github.com/jimmy-dq/DropTrack/blob/main/droptrack-vitb_384_mae_ce_32x4_got10k_ep100.log).
 
 
 ## Evaluation
